@@ -1,0 +1,3284 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+/* font-family: 'Playfair Display', serif; */
+
+/* Theme-colors */
+
+/* #008186 */
+/* #E8E8E8 */
+/* #D5A911 first-gold*/
+/* #FFDC73 */
+/* #F2B901 second-gold*/
+
+/* user-login-start */
+.user-bgr {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imgs/5.jpg');
+    margin: 0 !important;
+    padding: 50px 6% !important;
+    overflow: hidden !important;
+}
+
+.user-bgr .user-login {
+    width: 50%;
+    background-color: #e8e8e8d1;
+    box-shadow: 0 5px 8px #d5aa11ca;
+    border-radius: 6px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+@media screen and (max-width: 600px) {
+    .user-bgr .user-login{
+      width: 100%;
+    }
+  }
+
+
+.user-bgr .user-login .user-title {
+    font-weight:600;
+    text-shadow: 0 3px 4px #FFDC73;
+    letter-spacing: 1px;
+    color: #008186;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.user-bgr .user-login form .user-label {
+    /* font-family: 'Barlow', sans-serif; */
+    text-shadow: 0 3px 2px #FFDC73;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 10px;
+    letter-spacing: 0.6px;
+    color: #008186;
+}
+
+.user-bgr .user-login form .user-input {
+    border: 2px solid #008186d4;
+    font-family: 'Barlow', sans-serif;
+    /* box-shadow: 0 2px 2px #008186bb; */
+    font-size: 14.5px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    outline: none;
+    color: black;
+}
+
+.user-bgr .user-login form .user-input::placeholder {
+    color: rgba(0, 0, 0, 0.750);
+}
+
+.user-bgr .user-login form .user-btn {
+    width: 100%;
+    padding: 7.5px 0;
+    margin-top: 12px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #008186;
+    border: 2px solid #008186;
+    border-radius: 3px;
+    transition: all 0.5s linear;
+    color: whitesmoke;
+}
+
+.user-bgr .user-login form .user-btn:hover {
+    /* box-shadow: inset 0 -5px 7px #FFDC73; */
+    transform: translateY(-3px);
+}
+/* user-login-end */
+
+/* header-start */
+header {
+    width: 100% !important;
+    height: 100% !important;
+    background-image: url('../imgs/4.jpg');
+    background-size: 100% !important;
+    background-position: center;
+    /* background-repeat: repeat-y (1);
+    background-repeat: repeat-x (1); */
+    padding: 0 3% !important;
+    padding-top: 40px !important;
+    padding-bottom: 50px !important;
+}
+
+.noor-main-navgbar {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky !important;
+    z-index: 1000;
+    padding: 7px 2%;
+    border-radius: 3px;
+    box-shadow: 0 3.5px 8px #D5A911;
+    background-color: #E8E8E8;
+    transition: all 0.5s ease !important;
+}
+
+.noor-main-navgbar.sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 1%;
+    box-shadow: 0 3px 8px #008186;
+    background-color: #e8e8e8cf;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    scroll-behavior: smooth !important;
+    border-radius: 0 !important;
+    animation: sticky 0.6s;
+}
+
+/* @keyframes sticky{
+    from{
+        top: -50%;
+    }
+    to{
+        top: 0;
+    }
+} */
+
+.noor-main-navgbar .noor-logo img {
+    width: 110px !important;
+    filter: drop-shadow(2px 2.5px 1px #FFDC73);
+    cursor: pointer;
+}
+
+/* noor-navgbar */
+.noor-main-navgbar .noor-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.noor-main-navgbar .noor-btn {
+    background-color: #008186;
+    font-size: 23px;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.noor-main-navgbar .noor-navgbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.noor-main-navgbar .noor-navgbar li a::after {
+    content: '';
+    width: 0%;
+    height: 2.2px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #008186, #D5A911);
+    margin: auto !important;
+    display: block;
+}
+
+.noor-main-navgbar .noor-navgbar li a:hover::after {
+    width: 100%;
+    transition: all 0.6s ease;
+}
+
+.noor-main-navgbar .noor-navgbar li a:focus::after {
+    width: 100%;
+    transition: all 0.6s ease;
+}
+
+.noor-main-navgbar .noor-navgbar .dropdown-menu {
+    background-color: #E8E8E8;
+}
+
+.noor-main-navgbar .noor-navgbar .dropdown-item {
+    font-weight: 600 !important;
+}
+
+.noor-main-navgbar .noor-navgbar .dropdown-item:hover {
+    font-weight: 600 !important;
+    background-color: transparent;
+    color: #008186 !important;
+}
+
+.noor-main-navgbar .noor-navgbar li {
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.noor-main-navgbar .noor-navgbar li a {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-weight: 450 !important;
+    color: #008186 !important;
+}
+
+.noor-main-navgbar .noor-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+.noor-main-navgbar .noor-login .login-btn {
+    padding: 4px 22px;
+    font-size: 14px;
+    background-image: linear-gradient(100deg, #FFDC73, #d5b02abc 65%, #FFDC73);
+    background-size: 200%;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 2px solid #008186;
+    box-shadow: 0 2px 5px #008186;
+    letter-spacing: 0.5px;
+    margin-right: 12px !important;
+    font-weight: 450 !important;
+    color: #008186;
+    transition: all 0.7s;
+}
+
+.noor-main-navgbar .noor-login .login-btn:hover {
+    background-position: right;
+}
+
+.noor-main-navgbar .noor-login .user-profile {
+    padding: 8px 23px;
+    width: 100% !important;
+    font-size: 14px;
+    background-image: linear-gradient(100deg, #FFDC73, #d5b02abc 65%, #FFDC73);
+    background-size: 200%;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 2px solid #008186;
+    box-shadow: 0 2px 5px #008186;
+    letter-spacing: 0.5px;
+    margin-right: 12px !important;
+    font-weight: 450 !important;
+    color: #008186;
+    transition: all 0.7s;
+}
+
+.noor-main-navgbar .noor-login .user-profile:hover {
+    background-position: right;
+}
+
+.noor-main-navgbar .noor-login .user-profile img {
+    width: 25px;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 50%;
+}
+
+.noor-main-navgbar .noor-login .login-menu {
+    border: 2px solid #008186;
+    background-color: #fee390;
+}
+
+.noor-main-navgbar .noor-login .login-menu li a {
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: #008186 !important;
+}
+
+.noor-main-navgbar .noor-login i {
+    background-color: #008186;
+    display: none;
+    margin-left: 0px;
+    padding: 9px 12px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+/* header-end */
+
+@media only screen and (max-width:880px) {
+
+    .noor-main-navgbar .noor-login i {
+        display: inline-block;
+    }
+
+    .noor-main-navgbar .noor-btn {
+        display: inline-block;
+        position: absolute;
+        top: 13px !important;
+        right: 30px !important;
+        margin: 10px;
+        padding: 2px 12px;
+        border-radius: 2px;
+    }
+
+    .noor-main-navgbar .noor-menu {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column !important;
+        background-color: #E8E8E8;
+        position: absolute;
+        top: 0;
+        right: 120%;
+        border-radius: 6px;
+        z-index: 2000 !important;
+        transition: all 0.5s ease;
+    }
+
+    .noor-main-navgbar .noor-menu.active {
+        right: 0;
+    }
+
+    .noor-main-navgbar .noor-navgbar {
+        display: flex;
+        width: 100% !important;
+        /* background-color: #E1A140; */
+        flex-direction: column;
+    }
+
+    .noor-main-navgbar .noor-navgbar li {
+        padding-top: 22px !important;
+        padding-right: 30px !important;
+        padding-bottom: 22px !important;
+    }
+
+    .noor-main-navgbar .noor-navgbar li a {
+        font-size: 1.5rem !important;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+
+/* profile-section-start */
+.noor-user-section {
+    width: 100%;
+    /* height: 550px; */
+    background-color: #008186;
+    padding: 30px 40px !important;
+}
+
+.noor-user-section .noor-profile-box {
+    width: 100%;
+    height: 100% !important;
+    background-color: #d4d1d1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.noor-profile-box .noor-profile-content form {
+    display: flex;
+    height: 100% !important;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.noor-profile-box .noor-profile-content form .noor-profile-img {
+    flex-basis: 30%;
+    height: 100%;
+    margin-right: 10px ;
+    text-align: center;
+    background-color: #E8E8E8;
+    border: 2.5px solid #008186;
+    border-radius: 10px;
+    padding: 55px 15px;
+}
+
+.noor-profile-box .noor-profile-content form .noor-profile-img h3 {
+    color: #008186;
+}
+
+.noor-profile-box .noor-profile-content form .noor-profile-img img {
+    width: 160px;
+    border: 4px solid #008186;
+    /* box-shadow: 0 3px 4px #D5A911; */
+    border-radius: 50%;
+}
+
+.noor-profile-box .noor-profile-content form .noor-profile-img .user-label {
+    display: block !important;
+    text-align: left !important;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #008186;
+}
+
+
+.noor-profile-box .noor-profile-content form .noor-profile-img .user-input {
+    width: 100%;
+    border-radius: 3px;
+    /* box-shadow: 0 3px 4px #D5A911; */
+    border-radius: 5px;
+    font-weight: 500;
+    color: #008186;
+}
+
+.noor-profile-box .noor-profile-content .noor-profile-form {
+    flex-basis: 69%;
+    height: 100%;
+    background-color: #E8E8E8;
+    border: 2.5px solid #008186;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.noor-profile-box .noor-profile-content .noor-profile-form h3 {
+    padding-left: 12px;
+    color: #008186;
+    text-align: center;
+}
+
+.noor-profile-box .noor-profile-content .user-label {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #008186;
+}
+
+.noor-profile-box .noor-profile-content .noor-profile-form .user-input {
+    width: 100%;
+    border-radius: 3px;
+    /* box-shadow: 0 3px 4px #D5A911; */
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.800);
+}
+
+.noor-profile-box .noor-profile-content .noor-profile-form .update-btn {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 12px;
+    background-color: #008186;
+    /* box-shadow: 0 3px 4px #D5A911; */
+    font-weight: 500;
+    color: #E8E8E8;
+}
+.noor-profile-box .noor-profile-content .noor-profile-form .update-btn:hover{
+    border-color: #008186;
+    color: #008186;
+    background-color: white;
+    transition: all 0.5s ease; 
+}
+
+@media only screen and (max-width:992px) {
+    .noor-profile-box .noor-profile-content form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noor-profile-box .noor-profile-content form .noor-profile-img {
+        flex-basis: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .noor-profile-box .noor-profile-content form .noor-profile-img img{
+        width: 150px;
+    }
+
+}
+/* profile-section-end */
+
+
+
+/* booking-section-start */
+.noor-booking-sec {
+    width: 100%;
+    /* background-color: #008186; */
+    padding: 20px 5%;
+    margin: 20px 0;
+    /* background-color: #008186; */
+}
+
+.noor-booking-box {
+    /* background-color: #d4d1d1; */
+    padding: 20px !important;
+}
+
+.noor-booking-box .noor-booking-card {
+    background-color: #E8E8E8;
+    /* box-shadow: 0 5px 5px #008186; */
+    border: 2px solid #008186;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* .noor-booking-box .noor-booking-card .noor-booking-logo {
+    /* text-align: center;
+    padding: 12px 0;
+    border-radius: 20px;
+    margin: 5px 0;
+    border: 2.2px solid #008186; */
+    /* box-shadow: inset 0 0 8px #008186b1; */
+    /* background-color: #f9e2a0; */
+/* }  */
+*/
+
+.noor-booking-box .noor-booking-card .noor-booking-logo img {
+    width: 150px;
+    filter: drop-shadow(1px 2px 0px black);
+}
+
+.noor-booking-box .noor-booking-card .noor-booking-details {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px -20px;
+    /* border: 2.2px solid #008186; */
+    /* box-shadow: inset 0 0 8px #008186b1; */
+    /* background-color: #f9e2a0; */
+}
+.samad-booking-table{
+    border: solid  2.2px #008186;
+    color: #008186;
+    background-color: #E8E8E8;
+}
+
+.noor-booking-box .noor-booking-card .noor-booking-details .hotel-name {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    /* text-shadow: 0 5px 5px #FFDC73; */
+    /* padding: 0 !important; */
+    margin-top: -1rem !important;
+    color: #008186;
+    font-family: 'Playfair Display', serif
+}
+
+.noor-booking-box .noor-booking-card .noor-booking-details .room-name {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 550;
+    /* text-shadow: 0 5px 5px #FFDC73; */
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 6px !important;
+    color: #008186;
+}
+
+.noor-booking-box .noor-booking-card .noor-booking-details ul {
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 10px !important;
+}
+
+.noor-booking-box .noor-booking-card .noor-booking-details ul li {
+    font-size: 18px;
+    font-weight: 500 !important;
+    padding-bottom: 6px;
+}
+
+.noor-booking-box .noor-booking-card .noor-booking-btn {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.noor-booking-box .noor-booking-card .noor-booking-btn .book-btn {
+    width: 49%;
+    padding: 8px 0;
+    border: 2px solid #008186;
+    background-color: #008186;
+    box-shadow: inset 0 -3px 6px #d4d1d1;
+    border-radius: 30px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: white;
+}
+
+@media only screen and (max-width:786px) {
+    .noor-booking-box .noor-booking-card .noor-booking-btn .book-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* booking-section-end */
+
+/* Hero-Section-Start */
+
+.noor-hero-border{
+    width: 100%;
+    /* border: 6px solid #008186; */
+    box-shadow: 0 3px 15px #D5A911;
+    /* border-image: linear-gradient(145deg,  #D5A911,#FFDC73, #D5A911);
+    border-image-slice: 4; */
+    margin-top: 40px !important;
+    padding: 20px !important;
+    border-radius: 3px !important;
+}
+
+.noor-hero-section {
+    width: 100%;
+    height: 100%;
+    position: static;
+    padding: 25px !important;
+    border-radius: 2.5px;
+    background-image: linear-gradient(to right, #e8e8e8ef, #e8e8e8c0);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.noor-hero-section .noor-hero-main {
+    width: 100%;
+    height: 100% !important;
+    /* background-color: black !important; */
+    display: flex;
+    position: relative !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.noor-hero-section .noor-hero-content {
+    flex-basis: 55%;
+    /* background-color: wheat; */
+    height: 100% !important;
+    padding: 10px 0;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-text {
+    /* background-color: aquamarine; */
+    height: 100% !important;
+    padding: 15px 0;
+    padding-left: 25px;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-text h2 {
+    font-size: 2.2em;
+    text-shadow: 0 3px 3px #FFDC73;
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #008186;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-text p {
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 380px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    color: #000000b7;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-text .exp-btn {
+    padding: 0;
+    background-color: transparent;
+    text-shadow: 0 2px 3px #D5A911;
+    border: none;
+    letter-spacing: 0.8px;
+    font-weight: 600 !important;
+    font-size: 16px;
+    color: #008186;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-text .exp-btn i {
+    border: 2px solid transparent;
+    text-shadow: none !important;
+    box-shadow: 0 2px 5px #008186;
+    padding: 6.5px 0;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 7px;
+    border-radius: 20px;
+    color: #D5A911;
+    transition: all 0.5s ease;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-text .exp-btn i:hover {
+    box-shadow: 2px 2px 5px #008186;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-searchbar {
+    width: 100% !important;
+    height: 100%;
+    padding: 20px 30px;
+    margin-top: 10px;
+    background-color: #008186;
+    border: 2px solid #FFDC73;
+    box-shadow: 0 2px 7px #FFDC73;
+    /* background-image: linear-gradient(to bottom right, #008186 5%, #FFDC73 40%, #008186); */
+    border-radius: 6px;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-searchbar label {
+    display: block;
+    text-align: left !important;
+    padding-bottom: 5px !important;
+    /* text-shadow: 0 1px 1px #D5A911; */
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: white;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-searchbar .noor-input {
+    width: 100%;
+    height: 100% !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-size: 14.5px !important;
+    font-weight: 500;
+    padding: 8px 10px !important;
+    border-radius: 3px !important;
+    cursor: pointer;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-searchbar .noor-input option{
+    color: #008186e0;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-searchbar .src-btn {
+    width: 100%;
+    padding: 8px 10px;
+    height: 100% !important;
+    background-color: #FFDC73;
+    border: 2px solid #FFDC73;
+    border-radius: 4px !important;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #008186;
+    transform: translateY(-5px);
+    transition: all ease 0.5s !important;
+}
+
+.noor-hero-section .noor-hero-content .noor-hero-searchbar .src-btn:hover {
+    box-shadow: inset 0 -3px 5px #008186;
+    transform: translateY(-8px);
+}
+
+.noor-hero-section .noor-hero-slider-box {
+    flex-basis: 45%;
+    /* height: 100% !important; */
+    /* height: 50vh !important; */
+    padding: 0 8px ;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    margin-top: 22px;
+    box-shadow: #D5A911 0px 30px 60px -12px inset, #D5A911 0px 18px 36px -18px inset;
+    clip-path: polygon(20% 0%, 0 19%, 47% 100%, 47% 100%, 48% 100%, 100% 20%, 80% 0%, 51% 0);
+}
+
+.noor-hero-section .noor-slider{
+    width: 100% !important;
+    position: relative;
+    padding: 0 !important;
+    margin: 0 !important;
+    clip-path: polygon(20% 0%, 0 19%, 47% 100%, 47% 100%, 48% 100%, 100% 20%, 80% 0%, 51% 0);
+    height: 100% !important;
+}
+
+.noor-hero-section .noor-slider .noor-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, transparent , #008186b9 200%);
+}
+
+.noor-hero-section .noor-slider img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Hero-Section-Responsive */
+@media only screen and (max-width:880px) {
+  
+
+    .noor-hero-section .noor-hero-main {
+        display: flex;
+        flex-basis: 100%;
+        position: relative;
+        height: 100% !important;
+        flex-direction: column-reverse;
+    }
+
+    .noor-hero-section .noor-hero-main .noor-hero-content{
+        text-align: center;
+        padding: 20px !important;
+        /* background-color: wheat; */
+    }
+
+    .noor-hero-section .noor-hero-slider-box{
+        flex-basis: 100%;
+        height: 90vh !important;
+    }
+
+    .noor-hero-section .noor-hero-content .noor-hero-text{
+        padding-left: 0 !important;
+    }
+
+    .noor-hero-section .noor-hero-content .noor-hero-text p{
+        max-width: none;
+    }
+}
+/* Hero-Section-End */
+
+/* destination-section-start */
+.destination-section{
+    background-color: #e5e5e5;
+}
+
+.noor-desti-title h2 {
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 33px;
+    text-shadow: 2px 2px 4px #d5aa11e9;
+    text-align: center;
+    font-weight: 600;
+    color: #008186;
+    padding-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 3rem;
+    color: var(--primary);
+    padding: 2rem 0;
+}
+
+#tranding {
+    padding: 4rem !important;
+    height: 100vh !important;
+}
+
+@media (max-width:1440px) {
+    #tranding {
+        padding: 7rem 0;
+    }
+}
+
+#tranding .tranding-slider {
+    height: 52rem !important;
+    padding: 2rem 0;
+    position: relative;
+}
+
+@media (max-width:500px) {
+    #tranding .tranding-slider {
+        height: 45rem;
+    }
+}
+
+.tranding-slide {
+    width: 18rem;
+    height: 20rem;
+    position: relative;
+}
+
+@media only screen and (max-width:500px) {
+    .tranding-slide {
+        width: 28rem !important;
+        height: 36rem !important;
+    }
+
+    .tranding-slide .tranding-slide-img img {
+        width: 28rem !important;
+        height: 36rem !important;
+    }
+}
+
+@media only screen and (max-width:1500px) {
+    .tranding-slide {
+        width: 20rem !important;
+        height: 22rem !important;
+    }
+
+    #tranding .tranding-slider {
+        height: 32rem !important;
+        padding: 2rem 0;
+        position: relative;
+    }
+
+    .tranding-slide .tranding-slide-img img {
+        width: 20rem !important;
+        height: 22rem !important;
+    }
+}
+
+.tranding-slide .tranding-slide-img img {
+    width: 18rem;
+    height: 20rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    box-shadow: 0 0 10px #008186;
+    object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.4rem;
+    background: linear-gradient(to bottom right, transparent 50%, #008186);
+}
+
+.tranding-slide .tranding-slide-content .city-name {
+    display: block !important;
+    background-color: #E8E8E8;
+    padding: 6px 35px;
+    font-size: 24px;
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #008186;
+}
+
+.tranding-slide-content .food-price {
+    position: absolute;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    background-color: #E8E8E8;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 4px;
+    top: 1rem;
+    right: 1rem;
+    color: #D5A911;
+}
+
+
+.tranding-slide-content .food-price i{
+    font-size: 15px;
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+.tranding-slider-control {
+    position: relative;
+    /* bottom: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+    left: 58% !important;
+    transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+    .tranding-slider-control .swiper-button-next {
+        left: 70% !important;
+        transform: translateX(-70%) !important;
+    }
+}
+
+@media (max-width:450px) {
+    .tranding-slider-control .swiper-button-next {
+        left: 80% !important;
+        transform: translateX(-80%) !important;
+    }
+}
+
+@media (max-width:990px) {
+    .tranding-slider-control .swiper-button-prev {
+        left: 30% !important;
+        transform: translateX(-30%) !important;
+    }
+}
+
+@media (max-width:450px) {
+    .tranding-slider-control .swiper-button-prev {
+        left: 20% !important;
+        transform: translateX(-20%) !important;
+    }
+}
+
+.tranding-slider-control .slider-arrow::after {
+    content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+    position: relative;
+    width: 15rem;
+    bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+    background: #D5A911;
+}
+
+/* destination-section-end */
+
+/* packages-section-start*/
+.noor-main-packages {
+    padding: 35px 4%;
+}
+
+.noor-main-packages h2 {
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 33px;
+    text-shadow: 2px 2px 4px #D5A911;
+    text-align: center;
+    font-weight: 600;
+    color: #008186;
+    padding-bottom: 5px;
+}
+
+.noor-main-packages .noor-packages-box {
+    width: 100%;
+    /* background-color: #000000; */
+    padding: 0 1px;
+    margin: 10px 0;
+}
+
+.noor-main-packages .noor-packages-card {
+    height: 100% !important;
+    background-color: #E8E8E8;
+    border: 2px solid #D5A911;
+    box-shadow: 1px 2px 6px #D5A911be;
+    border-radius: 6px;
+    height: 100% !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-content-img {
+    position: relative;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: pink;
+    transition: all 0.4s ease;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon i {
+    padding: 0 !important;
+    padding-top: 7.3px !important;
+    font-size: 13px;
+    /* font-weight: bolder; */
+    margin: 0 !important;
+    color: palevioletred;
+    cursor: pointer;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon i:hover {
+    font-weight: bolder !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon i:focus {
+    font-weight: bolder !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-img img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.noor-main-packages .noor-packages-card .noor-overlay-img {
+    /* background: linear-gradient(160deg, transparent 8%, #008186c6 92%); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content {
+    /* background-color: peru; */
+    padding: 18px 15px;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 !important;
+    border-bottom: 1.6px solid #008186;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content ul li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: black;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content i {
+    font-size: 13px;
+    color: #D5A911;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content h5 {
+    /* background-color: pink; */
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: -2px !important;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #008186ce;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content h6 {
+    /* background-color: #532200; */
+    text-shadow: 0 4px 4px #D5A911;
+    margin-top: 8px;
+    font-size: 12px;
+    color: black;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content .view-btn {
+    background-color: #008186;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 !important;
+    margin-top: 6px !important;
+    margin-bottom: 3px !important;
+    letter-spacing: 0.6px;
+    border: 2px solid #008186;
+    box-shadow: 0 3px 6px rgb(150, 150, 150);
+    border-radius: 3px;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content .view-btn:hover {
+    background-color: #E8E8E8;
+    box-shadow: 0 3px 10px rgb(150, 150, 150);
+    color: #008186;
+}
+
+/* packages-section-end*/
+
+/* testimonial-section-start */
+
+.noor-testimonials-section {
+    width: 100%;
+    /* background-color: #e3d9b4; */
+    padding: 0 4%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.noor-testimonials-section .noor-test-title h2{
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 33px;
+    text-shadow: 2px 2px 4px #D5A911;
+    text-align: center;
+    font-weight: 600;
+    color: #008186;
+    padding-bottom: 15px;
+}
+
+.noor-testimonials-section .noor-testimonials-card {
+    max-width: 600px;
+    text-align: center;
+    margin: 30px auto 40px;
+}
+
+.noor-testimonials-card .noor-test-box {
+    position: relative;
+    text-align: center;
+    background-color: #E8E8E8;
+    box-shadow: 0 4px 8px #D5A911;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 20px;
+}
+
+.noor-testimonials-card .noor-test-box:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 55px;
+    height: 55px;
+    background: url("../images/qourtes.png");
+    background-size: cover;
+    pointer-events: none;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.noor-testimonials-card .noor-test-box:hover:before {
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.noor-testimonials-card .noor-test-box:after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    width: 55px;
+    height: 55px;
+    background: url("../images/qourtes.png");
+    background-size: cover;
+    pointer-events: none;
+    opacity: 0.05;
+    transition: 0.5s;
+    transform: rotate(180deg) translateY(0px);
+}
+
+.noor-testimonials-card .noor-test-box:hover:after {
+    transform: rotate(180deg) translateY(-48px);
+    opacity: 1;
+}
+
+.noor-testimonials-card .noor-test-box:hover {
+    background-color: #008186;
+    box-shadow: inset 0 -4px 10px #FFDC73;
+    color: white !important;
+    cursor: pointer;
+}
+
+.noor-testimonials-card .noor-test-box .noor-test-imgbox {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #FFDC73;
+    transform: translate(-50%);
+    overflow: hidden;
+    z-index: 100;
+}
+
+.noor-testimonials-card .noor-test-box .noor-test-contentbox {
+    /* background-color: peru; */
+    padding: 10px 15px;
+}
+
+.noor-testimonials-card .noor-test-box .noor-test-contentbox p {
+    font-size: 12px;
+    padding-top: 45px !important;
+    padding-bottom: 5px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.900);
+}
+
+.noor-testimonials-card .noor-test-box .noor-test-contentbox h4 {
+    font-size: 18px;
+    font-weight: 600 !important;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+    padding-top: 1px;
+    color: #008186;
+}
+
+.noor-testimonials-card .noor-test-box .noor-test-contentbox h5 {
+    font-size: 12px;
+    transition: 0.5s;
+    padding-top: 3px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.noor-testimonials-card .noor-test-box .noor-test-contentbox:hover p,
+.noor-testimonials-card .noor-test-box .noor-test-contentbox:hover h4,
+.noor-testimonials-card .noor-test-box .noor-test-contentbox:hover h5 {
+    color: white;
+}
+
+.owl-nav {
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+}
+
+.owl-nav button {
+    border-radius: 50% !important;
+}
+
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i {
+    padding: 10px !important;
+    border-radius: 50%;
+    font-size: 14px !important;
+    background-color: #008186;
+    color: white !important;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.owl-nav .owl-prev i:hover,
+.owl-nav .owl-next i:hover {
+    background-color: #D5A911 !important;
+    color: #008186;
+}
+
+.owl-dots {
+    margin-top: 15px;
+}
+
+.owl-dots .owl-dot span {
+    background-color: rgb(185, 185, 185) !important;
+    padding: 3px !important;
+}
+
+.owl-dot.active span {
+    background-color: #D5A911 !important;
+}
+
+/* testimonial-section-end */
+
+/* footer-section-start */
+footer {
+    position: relative;
+    padding-top: 45px;
+    background: #008186;
+    box-shadow: #FFDC73 0px -30px 35px -28px inset;
+}
+
+footer .noor-container {
+    padding: 0 5%;
+}
+
+footer .footer-about h3 img {
+    width: 125px;
+    filter: drop-shadow(2px 2.5px 1px #D5A911);
+    margin-top: -14px;
+    margin-left: -15px;
+}
+
+footer .footer-about p {
+    font-size: 13px;
+    margin-top: -10px;
+    color: white;
+}
+
+footer .footer-about,
+footer .footer-contact,
+footer .footer-links,
+footer .footer-project {
+    position: relative;
+    margin-bottom: 35px;
+    color: white;
+}
+
+footer .footer-about h3,
+footer .footer-contact h3,
+footer .footer-links h3,
+footer .footer-project h3 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 7px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+}
+
+footer .footer-contact h3::after,
+footer .footer-links h3::after,
+footer .footer-project h3::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(#D5A911ea, #FFDC73, #D5A911ea);
+}
+
+footer .footer-social {
+    position: relative;
+    margin-top: 10px;
+}
+
+footer .footer-social a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding: 6px 0;
+    text-align: center;
+    color: #D5A911;
+    font-size: 13px;
+    border: 1.6px solid #D5A911;
+    border-radius: 35px;
+    transition: all 0.3s linear;
+}
+
+footer .footer-social a:hover {
+    font-weight: 0 !important;
+    transform: translateY(-7px);
+    background: linear-gradient(#D5A911ea, #FFDC73);
+    color: #008186;
+}
+
+footer .footer-contact p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: white;
+}
+
+footer .footer-contact i {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #D5A911;
+}
+
+footer .footer-links a {
+    display: block;
+    margin-bottom: 6px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.900);
+    transition: all 0.3s linear;
+}
+
+footer .footer-links a:hover {
+    transform: translateX(7px);
+    color: white;
+}
+
+footer .footer-links a::before {
+    position: absolute;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 0;
+    color: #D5A911;
+}
+
+footer .footer-project {
+    float: left;
+    font-size: 0;
+    margin-left: -60px;
+}
+
+@media only screen and (max-width:992px) {
+    footer .footer-project {
+        margin-left: 0px !important;
+    }
+}
+
+footer .footer-project a {
+    width: 32%;
+    padding: 0 8px 8px 0;
+    float: left;
+    display: block;
+    padding: 0 2%;
+    padding-bottom: 10px;
+    text-align: center !important;
+}
+
+footer .footer-project a img {
+    width: 100%;
+    box-shadow: 1px 2px 4px #CCAA37;
+    border-radius: 3px;
+    /* opacity: 0.8; */
+    transition: all 0.2s linear;
+}
+
+footer .footer-project a img:hover {
+    transform: scale(1.11);
+    opacity: 1;
+}
+
+/* footer-section-end */
+
+/* allhotels-section-start */
+.noor-hotels-container {
+    width: 100%;
+    padding: 30px 4%;
+}
+
+.noor-hotels-container .noor-hotel-info-box{
+    width: 100%;
+    background-color: #E8E8E8;
+    height: 42vh;
+    padding: 10px;
+    border: 2px solid #D5A911;
+    border-radius: 8px;
+}
+
+.noor-hotel-info-box .noor-info-bgr{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image:linear-gradient(to right, #008186, transparent),url('../imgs/recp.jpg');
+   background-size: cover;
+   background-position: center;
+   border-radius: 8px;
+}
+
+.noor-info-bgr .noor-info-text{
+    /* width: 100%; */
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.noor-info-bgr .noor-info-text h1{
+    text-transform: uppercase;
+    /* text-decoration: 1.5px double underline #D5A911 ; */
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 3.3rem;
+    color: #E8E8E8;
+}
+.noor-info-bgr .noor-info-text h1 span{
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #D5A911;
+}
+.noor-info-bgr .noor-info-text h3{
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+    color: #E8E8E8;
+}
+
+.noor-info-bgr .noor-info-text h5{
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #E8E8E8;
+}
+
+.noor-hotel-list-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* background-color: #a2a2fd; */
+}
+
+@media only screen and (max-width:800px) {
+
+    .noor-hotel-info-box .noor-info-bgr{
+        background-image:linear-gradient(to bottom, #008186, transparent, #008186 ),url('../imgs/recp.jpg') !important;
+     }
+
+    .noor-info-bgr .noor-info-text h1{
+        text-transform: uppercase;
+        /* text-decoration: 1.5px double underline #D5A911 ; */
+        /* font-family: 'Barlow', sans-serif; */
+        /* font-size: 3.8rem; */
+        color: #E8E8E8;
+    }
+    
+    .noor-info-bgr .noor-info-text h3{
+        text-transform: uppercase;
+        font-family: 'Barlow', sans-serif;
+        font-size: 26px;
+        color: #E8E8E8;
+    }
+    
+    .noor-info-bgr .noor-info-text h5{
+        text-transform: uppercase;
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+        color: #E8E8E8;
+    }
+    
+
+    .noor-hotel-list-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .noor-hotel-left-col .noor-hotel-box {
+        border-top: 2.3px solid #D5A911e8;
+        border-left: 2.3px solid #D5A911e8;
+        border-right: 2.3px solid #D5A911e8;
+        border-bottom: none !important;
+        margin-top: 12px;
+        padding: 20px 17px;
+        border-radius: 6px !important;
+    }
+
+    .noor-hotel-left-col {
+        flex-basis: 100%;
+        /* background-color: #a19797; */
+    }
+
+    .noor-hotel-left-col .noor-hotel-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noor-hotel-left-col .noor-hotel-box .noor-hotel-img {
+        flex-basis: 100%;
+    }
+
+    .noor-hotel-left-col .noor-hotel-box .noor-hotel-content {
+        flex-basis: 100%;
+        padding: 6px 1px;
+    }
+
+    .noor-hotel-box .noor-hotel-content .noor-hotel-price {
+        padding: 5px 16px !important;
+    }
+
+    .noor-hotel-box .noor-hotel-content .noor-hotel-price .detail-btn {
+        font-size: 14px !important;
+    }
+
+    .noor-hotel-right-col {
+        flex-basis: 100%;
+        padding: 0 !important;
+        height: 100%;
+        /* background-color: #a19797; */
+    }
+
+    .noor-hotel-right-col .noor-hotel-sidebar {
+        padding: 12px 10px !important;
+        border-radius: 4px !important;
+    }
+}
+
+.noor-hotel-left-col {
+    flex-basis: 73%;
+    height: 100%;
+    /* background-color: #a19797; */
+}
+
+.noor-hotel-left-col .noor-hotel-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    background-color: #E8E8E8;
+    border: 2.3px solid #D5A911e8;
+    /* border-bottom: 2.3px solid #D5A911e8;
+    border-left: 2.3px solid #D5A911e8; */
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+.noor-hotel-left-col .noor-hotel-box .noor-hotel-img {
+    flex-basis: 40%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.noor-hotel-left-col .noor-hotel-box .noor-hotel-img img {
+    width: 100%;
+    height: 18rem;
+    /* box-shadow: 0 0 5px #008186; */
+    border-radius: 3px;
+}
+
+.noor-hotel-left-col .noor-hotel-box .noor-hotel-content {
+    flex-basis: 58%;
+    height: 100%;
+    /* background-color: plum; */
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-details {
+    /* background-color: rgb(204, 189, 170); */
+    padding: 5px 10px;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    padding-top: 5px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #008186;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-details h5 {
+    font-size: 14px;
+    padding-top: 5px;
+    font-weight: 420;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-details ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 2px !important;
+    margin: 1px 0;
+    color: #000000;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-details ul li {
+    font-size: 12px;
+    padding-right: 3px;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-details i {
+    font-size: 10px;
+    margin: 0 !important;
+    color: #D5A911;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-price {
+    text-align: right;
+    padding: 5px 25px;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-price span {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 420;
+    text-shadow: 0 3px 3px #D5A911;
+    color: #008186;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-price .detail-btn {
+    margin-top: 7px;
+    padding: 4px 15px;
+    font-size: 14px;
+    background-color: #008186c0;
+    border: 2px solid #008186;
+    border-radius: 3px;
+    letter-spacing: 0.7px;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.noor-hotel-box .noor-hotel-content .noor-hotel-price .detail-btn:hover{
+    background-color: #008186;
+    box-shadow: inset 0 -4px 5px #FFDC73;
+    color: #FFDC73;
+}
+
+/* sidebar-section */
+
+.noor-hotel-right-col {
+    flex-basis: 26%;
+    height: 100%;
+    margin-top: 12px;
+    padding-right: 28px;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar {
+    background-color: #E8E8E8;
+    border-radius: 3px;
+    padding-bottom: 15px;
+    box-shadow: 0 3px 6px #D5A911;
+    /* height: 100%; */
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar h3 {
+    font-size: 19px;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 3px;
+    border: 2px solid #D5A911e8;
+    color: #008186;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-price {
+    /* background-color: #f4ebd0; */
+    padding: 6px 12px;
+    margin-top: 10px;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-price h5 {
+    font-size: 17px;
+    color: #008186;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-price label {
+    font-size: 14px;
+    color: #008186;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-price .user-price {
+    width: 100%;
+    padding: 2px 10px;
+    font-size: 14px;
+    border: 2px solid #008186bd;
+    outline: none;
+    border-radius: 3px;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-price .user-btn {
+    width: 100%;
+    padding: 2px 10px;
+    font-size: 15px;
+    margin-top: 8px;
+    border: 2px solid #008186;
+    background-color: #008186c0;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    outline: none;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-price .user-btn:hover{
+    background-color: #008186;
+    box-shadow: inset 0 -4px 5px #FFDC73;
+    color: #FFDC73;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-facilities {
+    /* background-color: wheat; */
+    padding: 6px 12px;
+    margin-top: 10px;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-facilities h5 {
+    font-size: 18px;
+    color: #008186;
+}
+
+.noor-hotel-right-col .noor-hotel-sidebar .noor-hotel-facilities span {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    color: #008186c3;
+}
+
+/* allhotels-section-end */
+
+/* hotelRoom-section-start */
+.noor-hotel-room-container {
+    width: 100%;
+    padding: 40px 4%;
+}
+
+.noor-hotel-bgr{
+    background-color: #d4d4d4;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.noor-hotel-room-aera {
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 12px; */
+}
+
+.noor-hotel-room-aera .noor-room-left-col {
+    flex-basis: 65%;
+    position: relative;
+    /* padding: 10px; */
+    height: 100%;
+    background-color: #c38686;
+    border-radius: 5px; 
+}
+
+.noor-hotel-room-aera .noor-room-left-col .noor-room-box {
+    background-color: #E8E8E8;
+    box-shadow: 0 0 5px #008186;
+    border: 2px solid #008186;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.noor-hotel-room-aera .noor-room-left-col .noor-room-box .noor-room-slider img {
+    width: 100%;
+    height: 31rem;
+    border-radius: 4px;
+}
+
+.noor-hotel-room-aera .noor-room-left-col .noor-room-desc-tab {
+    /* background-color: #008186d5; */
+    border-radius: 5px;
+    padding: 10px 0 !important;
+}
+
+/* noor-jatoi */
+.noor-hotel-room-aera .noor-room-right-col {
+    flex-basis: 34%;
+    height: auto;
+    padding-left: 10px;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content {
+    background-color: #E8E8E8;
+    box-shadow: 0 0 6px #008186;
+    border: 2px solid #008186;
+    border-radius: 5px;
+    padding: 3px;
+    height: 100%;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details {
+    /* background-color: rgb(103, 100, 100); */
+    text-align: center !important;
+    padding: 10px;
+    height: 100%;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-logo {
+    background-color: #008186df;
+    border-radius: 5px;
+    margin-top: 2px !important;
+    margin-bottom: 5px !important;
+    padding: 8px 0 !important;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-logo img {
+    filter: drop-shadow(0 1.5px 1px #000000);
+    width: 100px;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info {
+    text-align: left;
+    /* background-color: #e1c568; */
+    font-family: 'Mooli', sans-serif !important;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info h3 {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: capitalize !important;
+    color: #008186;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info p i {
+    font-size: 13.5px;
+    color: #008186;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info p {
+    font-size: 13px;
+    max-width: 220px;
+    color: #000000;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info h5 i {
+    font-size: 13.5px;
+    color: #008186;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info h5 {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 !important;
+    margin-top: -10px !important;
+    letter-spacing: 0.6px;
+    text-transform: capitalize !important;
+    color:#000000;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info .noor-price {
+    text-align: right !important;
+    text-shadow: 0 3px 3px #D5A911;
+    font-size: 13px;
+    font-weight: 420;
+    margin: 0 !important;
+    letter-spacing: 0.6px;
+    color: #000000;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info .noor-price .reserve-btn {
+    width: 100%;
+    padding: 5px 35px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #008186c3;
+    border: 2px solid #008186;
+    border-radius: 2px;
+    letter-spacing: 0.6px !important;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info .noor-price .reserve-btn:hover{
+   box-shadow: inset 0 -4px 6px #FFDC73;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info .noor-map {
+    width: 100%;
+    padding: 0 !important;
+    height: 42vh;
+}
+
+.noor-hotel-room-aera .noor-room-right-col .noor-room-content .noor-room-details .noor-info .noor-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px #008186;
+    opacity: 0.8;
+}
+
+/* hotelRoom-section-end */
+:root {
+    --container: 120rem;
+    --primary: hsl(201, 67%, 75%);
+    --white: hsl(0, 0%, 100%);
+    --white-light: hsl(0, 36%, 84%);
+    --box-shadow: hsl(220, 54%, 81%);
+}
+
+.container {
+    max-width: var(--container);
+    /* padding: 0 1rem; */
+    /* margin: 0 auto; */
+}
+
+@media only screen and (max-width:992px) {
+
+    .noor-hotel-room-container {
+        width: 100%;
+        padding: 25px 6%;
+    }    
+
+    .noor-hotel-room-aera {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .noor-hotel-room-aera .noor-room-left-col {
+        flex-basis: 100% !important;
+    }
+
+    .noor-hotel-room-aera .noor-room-right-col {
+        flex-basis: 100% !important;
+        padding: 0 !important;
+        padding-bottom: 10px !important;
+    }
+
+    .tab-item .noor-desc-tab {
+        display: block !important;
+        text-align: center;
+    }
+
+    .tab-item .noor-desc-tab .noor-desc-img img{
+       width: 55% !important;
+    }
+
+    .tab-item .noor-desc-tab .noor-desc-info {
+        flex-basis: 100%;
+        padding: 0 !important;
+        margin-top: 10px;
+        /* background-color: #f7e6d8; */
+    }
+
+    .tab-item .noor-desc-main {
+        width: 100%;
+        height: 50vh !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .tab-item .noor-desc-main::-webkit-scrollbar {
+        width: 6px;
+        background-color: #E8E8E8;
+        border-radius: 20px;
+    }
+    
+    .tab-item .noor-desc-main::-webkit-scrollbar-track {
+        width: 6px;
+        border-radius: 20px;
+    }
+    
+    .tab-item .noor-desc-main::-webkit-scrollbar-thumb {
+        background-color: #D5A911;
+        border-radius: 20px;
+    }
+
+    .tab-item .noor-desc-subinfo ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab-item .noor-desc-subinfo ul li {
+        width: 100% !important;
+        background-color: burlywood;
+        margin-bottom: 8px;
+        padding: 5px 18px;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        color: #532200;
+        transition: all 0.2s linear;
+    }
+
+    .tab-filter-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100% !important;
+        flex-basis: 100% !important;
+        margin-bottom: 5px;
+        height: 100% !important;
+        list-style-type: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 0;
+        letter-spacing: 0.6px;
+        border-radius: 4px;
+        cursor: pointer;
+        color: #532200;
+    }
+
+    .tab-filter-item-container {
+        margin: 0 auto;
+        margin-top: 4px;
+        border-radius: 5px;
+        background-color: #008186e5;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .tab-item {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding: 0.6rem !important;
+        transform: translateY(100%);
+        background-color: #008186e5;
+        box-shadow:inset 0 -7px 12px #e5e5e5;
+        border-radius: 4px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .tab-item .noor-room-tab {
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab-item .noor-room-type{
+        width: 100%;
+        height: 100% !important;
+        padding: 10px !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .tab-item .noor-desc-tab .noor-desc-info p {
+        font-size: 13px;
+        margin-top: 0px;
+        letter-spacing: 0.5px;
+        color: white;
+    }    
+    
+}
+
+.tab-container {
+    width: 100%;
+}
+
+.tab-filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* background-color: rgb(215, 167, 252); */
+}
+
+.filter-btn {
+    flex-basis: 32.5%;
+    background-color: #E8E8E8;
+    box-shadow: 0 0 5px #008186;
+    height: 100% !important;
+    list-style-type: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+    letter-spacing: 0.6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #008186;
+}
+
+.filter-btn.active {
+    background-color: #008186;
+    color: white;
+}
+
+.tab-filter-item-container {
+    margin: 0 auto;
+    margin-top: 4px;
+    border-radius: 5px;
+    background-color: #008186d1;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0.6rem !important;
+    transform: translateY(100%);
+    background-color: #008186d1;
+    box-shadow:inset 0 -7px 12px #d4d4d4;
+    border-radius: 4px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tab-item .noor-desc-tab {
+    display: flex;
+    /* background-color: #999999; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 7% !important;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.tab-item .noor-desc-tab .noor-desc-img {
+    flex-basis: 15%;
+    /* background-color: #e1c568; */
+    height: 100%;
+}
+
+.tab-item .noor-desc-tab .noor-desc-img img {
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 0 4px 4px #FFDC73;
+}
+
+.tab-item .noor-desc-tab .noor-desc-info {
+    flex-basis: 82%;
+    height: 100% !important;
+    padding-left: 2%;
+}
+
+.tab-item .noor-desc-tab .noor-desc-info h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 550;
+    font-size: 15px;
+    padding-top: 5px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.tab-item .noor-desc-tab .noor-desc-info h3 {
+    font-size: 17px;
+    margin-top: -5px;
+    color: white;
+}
+
+.tab-item .noor-desc-tab .noor-desc-info p {
+    font-size: 13px;
+    margin-top: 0px;
+    /* max-width: 420px; */
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.tab-item .noor-desc-subinfo {
+    /* background-color: #e1c568; */
+    padding: 20px 8%;
+    /* margin-top: 1rem; */
+}
+
+.tab-item .noor-desc-subinfo h5 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.tab-item .noor-desc-subinfo li {
+    list-style-type: none;
+    background-color: #E8E8E8;
+    padding: 5px 18px;
+    border-radius: 3px;
+    text-align: center !important;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: #008186;
+    transition: all 0.2s linear;
+}
+
+.tab-item .noor-desc-subinfo li:hover {
+    background-color: #008186;
+    /* box-shadow:inset 0 -4px 7px #FFDC73; */
+    color: white;
+    cursor: pointer;
+    border: 1px solid #FFDC73;
+}
+
+.tab-item .noor-room-tab {
+    width: 100% !important;
+    height: 100% !important;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-item .noor-room-type{
+    width: 100%;
+    height: 100%;
+    padding: 20px 60px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tab-item .noor-room-type h2{
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 1px 2px #D5A911;
+    font-weight: 550;
+    padding-bottom: 5px;
+    color: #E8E8E8;
+    text-align: center;
+}
+
+.tab-item .noor-room-type::-webkit-scrollbar {
+    width: 6px;
+    background-color: #E8E8E8;
+    border-radius: 20px;
+}
+
+.tab-item .noor-room-type::-webkit-scrollbar-track {
+    width: 6px;
+    border-radius: 20px;
+}
+
+.tab-item .noor-room-type::-webkit-scrollbar-thumb {
+    background-color: #D5A911;
+    border-radius: 20px;
+}
+
+.tab-item .noor-room-type .noor-room-img{
+    /* background-color: #000000; */
+    height: 100% !important;
+    margin: 0 !important;
+}
+
+.tab-item .noor-room-type .noor-room-img img{
+  width: 100%;
+  border-radius: 7px;
+  height: 23rem;
+}
+
+.tab-item .noor-room-type .noor-room-content{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #E8E8E8;
+    border-radius: 7px;
+    margin: 0 !important;
+    padding: 10px 30px;
+}
+
+.tab-item .noor-room-type .noor-room-content h3{
+    font-size: 25px;
+    font-weight: 600 !important;
+    font-family: 'Playfair Display', serif;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #008186;
+}
+
+.tab-item .noor-room-type .noor-room-content h4{
+    text-align: right !important;
+    font-weight: 600 !important;
+    font-family: 'Barlow', sans-serif;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #008186;
+}
+
+.tab-item .noor-room-type .noor-room-content p{
+    font-size: 16px;
+    font-weight: 500 !important;
+    max-width: 550px;
+    padding-left: 5px;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+    color: #000000d2;
+}
+
+.tab-item .noor-room-type .noor-room-content h5 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    padding: 0 !important;
+    padding-left: 3px !important;
+    padding-bottom: 4px !important;
+    color: #008186;
+}
+
+.tab-item .noor-room-type .noor-room-content ul {
+    list-style-type: none;
+    display: inline-block !important;
+    border-radius: 3px;
+    color: #008186;
+    margin: 0 !important;
+    transition: all 0.2s linear;    
+}
+
+.tab-item .noor-room-type .noor-room-content ul li{
+    font-size: 14px;
+    background-color: #FFDC73;
+    font-weight: 500;
+    padding: 5px 12px !important;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    letter-spacing: 0.6px;
+    display: inherit;
+    transition: all 0.2s linear; 
+}
+
+.tab-item .noor-room-type .noor-room-content li:hover {
+    background-color: #008186;
+    /* box-shadow:inset 0 -4px 7px #FFDC73; */
+    color: white;
+    cursor: pointer;
+}
+
+.tab-item.select_tab {
+    transform: translateY(0);
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    animation: feadIn 0.6s ease-in-out;
+}
+
+.tab-item .noor-review-tab {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-item .noor-users {
+    width: 100%;
+    height: 100%;
+    padding: 10px 30px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tab-item .noor-users h2{
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 1px 2px #D5A911;
+    font-weight: 500;
+    /* letter-spacing: 0.5px; */
+    padding: 5px 11px; 
+    color: #E8E8E8;
+    text-align: center;
+}
+
+.tab-item .noor-users::-webkit-scrollbar {
+    width: 6px;
+    background-color: #E8E8E8;
+    border-radius: 20px;
+}
+
+.tab-item .noor-users::-webkit-scrollbar-track {
+    width: 6px;
+    border-radius: 20px;
+}
+
+.tab-item .noor-users::-webkit-scrollbar-thumb {
+    background-color: #D5A911;
+    border-radius: 20px;
+}
+
+.tab-item .noor-review-tab .noor-users .noor-card {
+    background-color: #E8E8E8;
+    border: 2px solid #FFDC73;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+.tab-item .noor-review-tab .noor-users .noor-card:hover {
+    background-color: #008186e1;
+    box-shadow: 0 0 5px #FFDC73;
+    transform: scale(0.95);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.tab-item .noor-review-tab .noor-users .noor-card img {
+    width: 50px;
+    box-shadow: 0 0 5px #E8E8E8;
+    border-radius: 50%;
+}
+
+.tab-item .noor-review-tab .noor-users .noor-card h5 {
+    font-size: 16px;
+    padding: 0 !important;
+    padding-top: 6px !important;
+    /* color: #532200;   */
+}
+
+.tab-item .noor-review-tab .noor-users .noor-card p {
+    font-size: 12px;
+    max-width: 260px;
+    padding: 0 !important;
+    /* color: #000000; */
+}
+
+.btn-primary {
+    margin-top: 1.5rem;
+    display: inline-block;
+    background: var(--primary);
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+    color: var(--white);
+}
+
+@keyframes feadIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* samad car-rental */
+
+.noor-hotels-container .samad-car-rental-info-box{
+    width: 100%;
+    background-color: #E8E8E8;
+    height: 42vh;
+    padding: 10px;
+    border: 2px solid #D5A911;
+    border-radius: 8px;
+}
+
+.samad-car-rental-info-box .noor-info-bgr{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to right, #008186ad, transparent),url('../images/car-rental-bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+ }
+
+ /* Float four columns side by side */
+.samad-services-card .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+  
+
+  .samad-services-card-inner{
+    margin: 2rem 0rem; 
+  }
+
+  /* Remove extra left and right margins, due to padding */
+ .samad-services-card .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+ .samad-services-card .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .samad-services-card .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  
+  
+  /* Style the counter cards */
+  .samad-services-card .card h3{
+    color: white;
+    /* font-family: 'Playfair Display', serif; */
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .samad-services-card .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-image:url('../images/car-rental-bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    border: 2px solid #D5A911;
+    color: white;
+  }
+
+  .samad-services-card .card1 {
+    background-image:linear-gradient(to right, #008186a4, transparent),url('../images/city_tourimg.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .samad-services-card .card2 {
+    background-image:linear-gradient(to right, #0081869a, transparent),url('../images/car-rental-our-services2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .samad-services-card .card3 {
+    background-image:linear-gradient(to right, #00818650, transparent),url('../images/discount.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .samad-car-rental-main-card{
+    flex-basis: 100%;
+    height: 100%;
+    /* background-color: #a19797; */
+}
+
+.samad-car-rental-main-card .noor-hotel-box {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    margin-top: 12px;
+    background-color: #E8E8E8;
+    border: 2.3px solid #D5A911e8;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .samad-car-rental-main-card .noor-hotel-box{
+      display: block;
+    }
+  }
+
+
+.samad-car-rental-main-card .noor-hotel-box .noor-hotel-img {
+    flex-basis: 30%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.samad-car-rental-main-card .noor-hotel-box .noor-hotel-img img {
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0 0 5px #008186; */
+    border-radius: 3px;
+}
+
+.samad-car-rental-main-card.noor-hotel-box .noor-hotel-content {
+    flex-basis: 58%;
+    height: 100%;
+    /* background-color: plum; */
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-details {
+    /* background-color: rgb(204, 189, 170); */
+    padding: 5px 10px;
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-details h3 {
+    font-size: 25px;
+    padding-top: 5px;
+    /* margin-bottom: 0; */
+    font-weight: 600;
+    color: #008186;
+    font-family: 'Playfair Display', serif;
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-details h5 {
+    font-size: 14px;
+    padding-top: 5px;
+    font-weight: 420;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-details ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 2px !important;
+    margin: 1px 0;
+    color: #000000;
+}
+
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-details ul li {
+    font-size: 15px;
+    padding-right: 2rem;
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-details i {
+    font-size: 15px;
+    margin: 0 !important;
+    color: #D5A911;
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-price {
+    text-align: left;
+    margin-top: 1rem;
+    padding: 5px 25px;
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-price span {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 420;
+    text-shadow: 0 3px 3px #D5A911;
+    color: #008186;
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-price .detail-btn {
+    margin-top: 7px;
+    padding: 4px 15px;
+    font-size: 14px;
+    background-color: #008186c0;
+    border: 2px solid #008186;
+    border-radius: 3px;
+    letter-spacing: 0.7px;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.noor-hotel-box .noor-hotel-content .samad-car-rental-price .detail-btn:hover{
+    background-color: #008186;
+    box-shadow: inset 0 -4px 5px #FFDC73;
+    color: #FFDC73;
+}
+
+.samad-hotel-feedback-btn{
+    width: auto;
+    background-color:white;
+    border: 1px solid #008186;
+    color: #008186;
+    margin: auto;
+    margin-top: 1rem;
+    transition: all ease 0.5s;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.samad-hotel-feedback-btn:hover{
+    background-color:#008186;
+    border: 1px solid white;
+    color: white;
+}
+.pagination {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.pagination a {
+  color: 008186;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #008186;
+  color: #FFDC73;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.samad-car-rental-reserve-form h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    padding-top: 5px;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    font-weight: 600;
+    color: #008186;
+    text-align: center;
+}
+
+.samad-car-rental-reserve-form label{
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #008186;
+}
+
+.samad-car-rental-reserve-form button{
+    margin-top: 7px;
+    padding: 4px 15px;
+    font-size: 14px;
+    background-color: #008186c0;
+    border: 2px solid #008186;
+    border-radius: 3px;
+    letter-spacing: 0.7px;
+    color: white;
+    transition: all 0.3s linear;
+}
+.samad-car-rental-reserve-form button:hover{
+    background-color: #008186;
+    box-shadow: inset 0 -4px 5px #FFDC73;
+    color: #FFDC73;   
+}
+
+.samad-car-rental-reserve-detail{
+    padding-right: 0 !important;
+}
+.samad-car-rental-details-leftbar{
+    padding-right: 0 !important;
+
+}
+
+/* samad-modal */
+.modal-heading{
+    color: #008186;
+    text-align: center;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-weight: 600; */
+}
+.samad-modal-label{
+    color: #008186;
+}
+.samad-modal-btn{
+    background-color: #008186;
+    color: whitesmoke;
+    /* width: 20%; */
+    font-size: 16px;
+    border: 2px solid #008186;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.samad-modal-btn:hover{
+    background-color: white;
+    border-color: #008186;
+}
+/* .user-bgr .user-login form .user-btn {
+    width: 100%;
+    padding: 7.5px 0;
+    margin-top: 12px;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 1px;
+}
+
+.user-bgr .user-login form .user-btn:hover {
+    box-shadow: inset 0 -5px 7px #FFDC73;
+    transform: translateY(-3px);
+} */
+
+
+
+
+
+
+/* Carousel Custo,Code */
+
+/* .noor-room-slider .carousel .carousel-indicators{
+    height: 100px;
+} */
+.carousel-indicators [data-bs-target]{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+}
+.samad-thumbnail-btn img{
+    height: 4rem !important;
+    /* margin-top: -3rem; */
+    opacity: 1;
+    border: #008186 solid 3px;
+    box-shadow: #000000 3px 3px 3px;
+}
+.carousel-indicators{
+    background-color: #e8e8e88f;
+    height: 85px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.samad-contactus-title{
+    color: #008186; 
+    padding: 0 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 600;
+    /* padding-top: 5px; */
+    /* margin-bottom: 1rem; */
+    /* margin-top: -1rem; */
+    /* color: #008186; */
+    /* text-align: center; */
+}
+.samad-contactus-heading h1{
+    color: #008186; 
+    padding: 0 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    /* margin-bottom: 1rem; */
+    /* margin-top: -1rem; */
+    /* color: #008186; */
+    text-align: center;
+}
+
+/* meeting & events section start */
+.noor-events-sec {
+    width: 100%;
+    /* padding: 40px 5% !important; */
+    margin-top: 40px;
+}
+
+.noor-events-slider {
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    /* padding: 30px; */
+    /* box-shadow: 0 5px 5px #008186; */
+}
+
+.noor-events-slider .carousel-inner {
+    height: 70vh;
+    position: relative;
+    /* background-color: #008186; */
+}
+
+.noor-events-slider .carousel-item {
+    height: 100% !important;
+}
+
+.noor-events-slider .carousel-item img {
+    height: 100% !important;
+    border-radius: 10px;
+}
+
+.noor-overlay-slider {
+    /* background: linear-gradient(to top left, transparent, #00818688); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.noor-events-slider .carousel-caption{
+    background-color: #d4d4d4;
+    padding: 60px 50px !important;
+    position: absolute;
+    bottom: 70px;
+}
+
+.noor-events-slider .carousel-caption{
+    background-color: #d4d4d4d7;
+    padding: 50px;
+    position: absolute;
+    bottom:70px;
+    /* box-shadow: inset 0 -6px 5px #D5A911; */
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.noor-events-slider .carousel-caption h2{
+   font-family: 'Playfair Display', serif;
+   /* text-shadow: 0 4px 5px #FFDC73; */
+   font-weight: bolder;
+   padding-bottom: 5px;
+   color: #008186;
+}
+
+.noor-events-slider .carousel-caption p{
+    font-weight: 400;
+    padding: 7px 10px;
+    /* font-style: italic; */
+    color: #000000dd;
+ }
+ 
+ .noor-events-slider .carousel-caption .sid-btn{
+    padding: 8px 50px;
+    background-color: transparent;
+    border: 2px solid #008186;
+    /* box-shadow: -2px 3px 5px #008186; */
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    color: #008186;
+    transition: all 0.3s linear;
+ }
+
+ .noor-events-slider .carousel-caption .sid-btn:hover{
+   background-color: #008186;
+   border: 2px solid #FFDC73;
+   /* box-shadow: -2px 3px 5px #FFDC73; */
+   color: white;
+ }
+
+ @media only screen and (max-width:786px){
+    .noor-events-slider .carousel-caption {
+        display: block !important;
+        padding: 40px 50px !important;
+        bottom: 100px !important;
+    }
+ }
+
+/* cards slider */
+.container {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.slide-container {
+    margin: 0 20px !important;
+    overflow: hidden;
+}
+
+.container h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: #008186;
+}
+
+.noor-main-packages .noor-packages-box {
+    width: 100%;
+    background-color: transparent !important;
+    padding: 0 1px;
+    margin: 0 !important;
+}
+
+.noor-main-packages .noor-packages-card {
+    height: 100% !important;
+    border: 2px solid #D5A911 !important;
+    box-shadow: 1px 2px 6px #D5A911be !important;
+    border-radius: 6px;
+    height: 100% !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-content-img {
+    position: relative;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: pink;
+    transition: all 0.4s ease;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon i {
+    padding: 0 !important;
+    padding-top: 7.3px !important;
+    font-size: 14px;
+    /* font-weight: bolder; */
+    margin: 0 !important;
+    color: palevioletred;
+    cursor: pointer;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon i:hover {
+    font-weight: bolder !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-rating-icon i:focus {
+    font-weight: bolder !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-img img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.noor-main-packages .noor-packages-card .noor-overlay-img {
+    /* background: linear-gradient(160deg, transparent 8%, #008186c6 92%); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content {
+    /* background-color: peru; */
+    padding: 18px 15px;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content .city-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 !important;
+    border-bottom: 1.6px solid #008186 !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content .city-info li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: black !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content .pkg-info {
+    display: flex;
+    background-color: #FFDC73;
+    box-shadow: 0 2px 4px #008186;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    border-radius: 3px !important;
+    padding: 7px 12px !important;
+    border-bottom: none !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content .pkg-info li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: #008186 !important;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content i {
+    font-size: 13px;
+    color: #D5A911;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content h5 {
+    /* background-color: pink; */
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: -2px !important;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #000000ce;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content h6 {
+    /* background-color: #532200; */
+    text-shadow: 0 4px 4px #D5A911;
+    margin-top: 8px;
+    font-size: 12px;
+    color: black;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content .view-btn {
+    background-color: #008186;
+    padding: 6px 18px !important;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+    letter-spacing: 0.6px;
+    border: 2px solid #008186;
+    box-shadow: 0 3px 6px rgb(150, 150, 150);
+    border-radius: 3px;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+
+.noor-main-packages .noor-packages-card .noor-packages-content .view-btn:hover {
+    background-color: #E8E8E8;
+    box-shadow: 0 3px 10px rgb(150, 150, 150);
+    color: #008186;
+}
+
+.swiper-navBtn {
+    color: #000;
+    height: 50px;
+    width: 50px;
+    transform: translateY(-40%);
+    background: #fff;
+    border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-navBtn {
+        display: none;
+    }
+}
+
+/* meeting & events section end */

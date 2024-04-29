@@ -1,0 +1,6 @@
+For Access the Admin panel link in public website's Footer
+
+Admin Email:samad@gmail.com
+Admin Password:samad
+
+Database name is: royal_edge
